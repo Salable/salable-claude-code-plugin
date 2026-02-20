@@ -1,5 +1,5 @@
 ---
-name: salable
+name: salable-monetize
 description: Monetize apps on beta.salable.app 2.0 using Salable MCP tools and REST API. Use when creating or modifying products, plans, line items, prices, currency options, tiers, and entitlements, including packaging decisions like flat-rate, per-seat, and metered pricing. When asked to monetize or monetise an app, assume scope includes in-app paywall pricing tables, feature gating with entitlements, and subscription management views; determine entitlement mapping with the user before provisioning.
 user-invocable: true
 allowed-tools: Read, Grep, Glob, WebFetch, mcp__salable__*
@@ -246,13 +246,13 @@ When modifying existing plans: fetch with `plans_get`, copy all existing `id` va
       "name": "base_fee", "slug": "base_fee",
       "priceType": "flat_rate", "intervalType": "recurring", "billingScheme": "flat_rate",
       "minQuantity": 1, "maxQuantity": 1, "tiersMode": null,
-      "prices": [{ "defaultCurrency": "USD", "interval": "month", "intervalCount": 1, "currencyOptions": [{ "currency": "USD", "unitAmount": 99 }] }]
+      "prices": [{ "defaultCurrency": "USD", "interval": "month", "intervalCount": 1, "currencyOptions": [{ "currency": "USD", "unitAmount": 99.00 }] }]
     },
     {
       "name": "seat", "slug": "seat",
       "priceType": "per_seat", "intervalType": "recurring", "billingScheme": "per_unit",
       "minQuantity": 1, "maxQuantity": 500, "allowChangingQuantity": true, "tiersMode": null,
-      "prices": [{ "defaultCurrency": "USD", "interval": "month", "intervalCount": 1, "currencyOptions": [{ "currency": "USD", "unitAmount": 12 }] }]
+      "prices": [{ "defaultCurrency": "USD", "interval": "month", "intervalCount": 1, "currencyOptions": [{ "currency": "USD", "unitAmount": 12.00 }] }]
     },
     {
       "name": "api_usage", "slug": "api_usage",

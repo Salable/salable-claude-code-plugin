@@ -9,10 +9,11 @@ Monetize any app with [Salable 2.0](https://beta.salable.app) directly from Clau
 
 ## Setup
 
-### 1. Install the plugin
+### 1. Add the marketplace and install the plugin
 
 ```bash
-claude plugin add /path/to/salable-plugin
+claude plugin marketplace add /path/to/salable-monetize-plugin
+claude plugin install salable
 ```
 
 ### 2. Set your API key
@@ -34,10 +35,10 @@ The MCP server connection requires a restart after setting the API key.
 
 ## Usage
 
-Run the `/salable` skill inside Claude Code:
+Run the `/salable-monetize` skill inside Claude Code:
 
 ```
-/salable
+/salable-monetize
 ```
 
 This launches a guided workflow that:
@@ -79,8 +80,8 @@ salable-plugin/
         │   └── plugin.json         # Plugin config and MCP server definition
         ├── .mcp.json               # MCP server config
         ├── skills/
-        │   └── salable/
-        │       └── SKILL.md        # /salable skill definition and workflow
+        │   └── salable-monetize/
+        │       └── SKILL.md        # /salable-monetize skill definition and workflow
         └── references/
             ├── auth-options.md     # Auth recommendations by stack
             ├── mcp-tool-playbook.md    # MCP operation guide
@@ -95,7 +96,7 @@ The plugin connects Claude Code to the Salable platform through two channels:
 - **MCP tools** (`mcp__salable__*`) for catalog writes — creating products, entitlements, plans, line items, and prices
 - **REST API** (`beta.salable.app/api/*`) for app runtime — pricing pages, entitlement checks, checkout, and subscription management
 
-The `/salable` skill orchestrates both, using MCP for provisioning and REST for the code it generates in your app.
+The `/salable-monetize` skill orchestrates both, using MCP for provisioning and REST for the code it generates in your app.
 
 ## Requirements
 

@@ -46,7 +46,7 @@ Use for one base subscription that grants a fixed entitlement set.
           "currencyOptions": [
             {
               "currency": "USD",
-              "unitAmount": 29
+              "unitAmount": 29.00
             }
           ]
         }
@@ -81,19 +81,19 @@ Use when one plan should support multiple billing cadences and checkout should s
           "defaultCurrency": "USD",
           "interval": "month",
           "intervalCount": 1,
-          "currencyOptions": [{ "currency": "USD", "unitAmount": 29 }]
+          "currencyOptions": [{ "currency": "USD", "unitAmount": 29.00 }]
         },
         {
           "defaultCurrency": "USD",
           "interval": "month",
           "intervalCount": 3,
-          "currencyOptions": [{ "currency": "USD", "unitAmount": 81 }]
+          "currencyOptions": [{ "currency": "USD", "unitAmount": 81.00 }]
         },
         {
           "defaultCurrency": "USD",
           "interval": "year",
           "intervalCount": 1,
-          "currencyOptions": [{ "currency": "USD", "unitAmount": 290 }]
+          "currencyOptions": [{ "currency": "USD", "unitAmount": 290.00 }]
         }
       ]
     }
@@ -131,13 +131,13 @@ Use when most plans for a product default to one currency (for example `USD`), b
           "defaultCurrency": "GBP",
           "interval": "month",
           "intervalCount": 1,
-          "currencyOptions": [{ "currency": "GBP", "unitAmount": 24 }]
+          "currencyOptions": [{ "currency": "GBP", "unitAmount": 24.00 }]
         },
         {
           "defaultCurrency": "GBP",
           "interval": "year",
           "intervalCount": 1,
-          "currencyOptions": [{ "currency": "GBP", "unitAmount": 240 }]
+          "currencyOptions": [{ "currency": "GBP", "unitAmount": 240.00 }]
         }
       ]
     }
@@ -178,7 +178,7 @@ Use for seat-based licensing with configurable quantity.
           "currencyOptions": [
             {
               "currency": "USD",
-              "unitAmount": 12
+              "unitAmount": 12.00
             }
           ]
         }
@@ -219,8 +219,8 @@ Use for usage-based billing where price changes by consumption tiers.
               "currency": "USD",
               "unitAmount": null,
               "tiers": [
-                { "upTo": "10000", "flatAmount": null, "unitAmount": 0.02 },
-                { "upTo": "50000", "flatAmount": null, "unitAmount": 0.015 },
+                { "upTo": "10000", "flatAmount": null, "unitAmount": 0.03 },
+                { "upTo": "50000", "flatAmount": null, "unitAmount": 0.02 },
                 { "upTo": "inf", "flatAmount": null, "unitAmount": 0.01 }
               ]
             }
@@ -264,7 +264,7 @@ Use when one plan needs a platform fee, seat billing, and usage overage.
           "defaultCurrency": "USD",
           "interval": "month",
           "intervalCount": 1,
-          "currencyOptions": [{ "currency": "USD", "unitAmount": 99 }]
+          "currencyOptions": [{ "currency": "USD", "unitAmount": 99.00 }]
         }
       ]
     },
@@ -283,7 +283,7 @@ Use when one plan needs a platform fee, seat billing, and usage overage.
           "defaultCurrency": "USD",
           "interval": "month",
           "intervalCount": 1,
-          "currencyOptions": [{ "currency": "USD", "unitAmount": 15 }]
+          "currencyOptions": [{ "currency": "USD", "unitAmount": 15.00 }]
         }
       ]
     },
@@ -307,7 +307,7 @@ Use when one plan needs a platform fee, seat billing, and usage overage.
               "currency": "USD",
               "unitAmount": null,
               "tiers": [
-                { "upTo": "50000", "flatAmount": null, "unitAmount": 0.015 },
+                { "upTo": "50000", "flatAmount": null, "unitAmount": 0.02 },
                 { "upTo": "inf", "flatAmount": null, "unitAmount": 0.01 }
               ]
             }
