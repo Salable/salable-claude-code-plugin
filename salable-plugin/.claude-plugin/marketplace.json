@@ -1,0 +1,26 @@
+{
+  "name": "salable-plugins",
+  "owner": {
+    "name": "Salable",
+    "email": "support@salable.app"
+  },
+  "metadata": {
+    "description": "Official Salable plugins for Claude Code — monetize any app with pricing models, entitlements, and subscription management",
+    "version": "1.0.0",
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "salable",
+      "source": "./plugins/salable",
+      "description": "Monetize apps with Salable 2.0 — pricing models, entitlements, feature gating, and subscription management via MCP tools and REST API",
+      "version": "1.0.0",
+      "author": {
+        "name": "Salable"
+      },
+      "category": "monetization",
+      "tags": ["monetization", "pricing", "subscriptions", "entitlements", "saas", "billing"],
+      "keywords": ["monetization", "pricing", "subscriptions", "entitlements", "saas", "billing", "stripe", "salable"]
+    }
+  ]
+}
