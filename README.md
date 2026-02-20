@@ -12,7 +12,7 @@ Monetize any app with [Salable 2.0](https://beta.salable.app) directly from Clau
 ### 1. Add the marketplace and install the plugin
 
 ```bash
-claude plugin marketplace add /path/to/salable-monetize-plugin
+claude plugin marketplace add Salable/salable-claude-code-plugin
 claude plugin install salable
 ```
 
@@ -71,22 +71,24 @@ Multiple billing cadences (monthly, quarterly, yearly) and multi-currency pricin
 ## Plugin structure
 
 ```
-salable-plugin/
+salable-claude-code-plugin/          # repo root
 ├── .claude-plugin/
-│   └── marketplace.json            # Plugin collection manifest
-└── plugins/
-    └── salable/
-        ├── .claude-plugin/
-        │   └── plugin.json         # Plugin config and MCP server definition
-        ├── .mcp.json               # MCP server config
-        ├── skills/
-        │   └── salable-monetize/
-        │       └── SKILL.md        # /salable-monetize skill definition and workflow
-        └── references/
-            ├── auth-options.md     # Auth recommendations by stack
-            ├── mcp-tool-playbook.md    # MCP operation guide
-            ├── openapi-focus.md        # REST API endpoint map
-            └── pricing-model-templates.md  # Ready-to-use pricing payloads
+│   └── marketplace.json             # Plugin collection manifest
+├── plugins/
+│   └── salable/
+│       ├── .claude-plugin/
+│       │   └── plugin.json          # Plugin config and MCP server definition
+│       ├── .mcp.json                # MCP server config
+│       ├── skills/
+│       │   └── salable-monetize/
+│       │       └── SKILL.md         # /salable-monetize skill definition and workflow
+│       └── references/
+│           ├── auth-options.md          # Auth recommendations by stack
+│           ├── mcp-tool-playbook.md     # MCP operation guide
+│           ├── openapi-focus.md         # REST API endpoint map
+│           └── pricing-model-templates.md  # Ready-to-use pricing payloads
+├── README.md
+└── .gitignore
 ```
 
 ## How it works
