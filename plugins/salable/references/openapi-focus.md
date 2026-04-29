@@ -3,8 +3,8 @@
 ## Contract Sources
 
 - Primary local spec (preferred): `references/openapi.yaml`
-- Primary hosted spec: `https://beta.salable.app/openapi.yaml`
-- Primary docs: `https://beta.salable.app/docs`
+- Primary hosted spec: `https://salable.app/openapi.yaml`
+- Primary docs: `https://salable.app/docs`
 - If the local spec is missing or stale, refresh from hosted OpenAPI.
 - If hosted fetch is blocked by sandbox/network policy, request user permission before fetching.
 - If permission is denied, continue with this REST endpoint map and explicitly note that hosted OpenAPI refresh was denied.
@@ -13,7 +13,7 @@
 
 ## Version Boundary
 
-- Use only `beta.salable.app` contracts for Salable 2.0 work.
+- Use only `salable.app` contracts for Salable 2.0 work.
 - Do not use `docs.salable.app` or non-beta `salable.app` in this map.
 
 ## Core Pricing Endpoints
