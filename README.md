@@ -107,6 +107,6 @@ The `/salable-monetize` skill orchestrates both, using MCP for provisioning and 
 
 ## Links
 
-- [Salable 2.0 Dashboard](https://salable.app)
+- [Salable Dashboard](https://salable.app)
 - [Salable Docs](https://salable.app/docs)
 - [Salable OpenAPI Spec](https://salable.app/openapi.yaml)
