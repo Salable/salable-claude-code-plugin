@@ -2,7 +2,7 @@
   "mcpServers": {
     "salable": {
       "type": "http",
-      "url": "https://beta.salable.app/api/mcp",
+      "url": "https://salable.app/api/mcp",
       "headers": {
         "Authorization": "Bearer ${SALABLE_API_KEY}"
       }
