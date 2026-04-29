@@ -2,13 +2,13 @@
 
 ## Primary References
 
-- Docs: `https://beta.salable.app/docs`
+- Docs: `https://salable.app/docs`
 - Local OpenAPI (preferred): `references/openapi.yaml`
-- OpenAPI: `https://beta.salable.app/openapi.yaml`
+- OpenAPI: `https://salable.app/openapi.yaml`
 
 ## Version Boundary
 
-- Use only `beta.salable.app` references for Salable 2.0 work.
+- Use only `salable.app` references for Salable 2.0 work.
 - Do not use `docs.salable.app` or non-beta `salable.app` references in this workflow.
 
 ## Default Build Sequence
@@ -49,7 +49,7 @@
 - Use MCP for pricing catalog provisioning and configuration writes.
 - Use REST for runtime app views and user-facing flows; app runtime integration should not fallback to MCP calls.
 - Validate REST payload constraints against `references/openapi.yaml` first.
-- If the local file is missing or stale, validate against `https://beta.salable.app/openapi.yaml` and refresh the local copy.
+- If the local file is missing or stale, validate against `https://salable.app/openapi.yaml` and refresh the local copy.
 - If hosted OpenAPI fetch is blocked by sandbox/network policy, request user permission before fetching.
 - If permission is denied, continue with the documented REST endpoint set and explicitly note that hosted OpenAPI refresh was denied.
 - If OpenAPI is unavailable, continue with the documented REST endpoint set in this skill and note the assumption explicitly.
