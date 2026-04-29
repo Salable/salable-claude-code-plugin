@@ -5,13 +5,13 @@
   "author": {
     "name": "Salable"
   },
-  "homepage": "https://beta.salable.app",
+  "homepage": "https://salable.app",
   "license": "MIT",
   "keywords": ["monetization", "pricing", "subscriptions", "entitlements", "saas", "billing", "stripe", "salable"],
   "mcpServers": {
     "salable": {
       "type": "http",
-      "url": "https://beta.salable.app/api/mcp",
+      "url": "https://salable.app/api/mcp",
       "headers": {
         "Authorization": "Bearer ${SALABLE_API_KEY}"
       }
