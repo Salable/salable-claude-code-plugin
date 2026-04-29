@@ -1,6 +1,6 @@
 ---
 name: salable-monetize
-description: Monetize apps on beta.salable.app 2.0 using Salable MCP tools and REST API. Use when creating or modifying products, plans, line items, prices, currency options, tiers, and entitlements, including packaging decisions like flat-rate, per-seat, and metered pricing. When asked to monetize or monetise an app, assume scope includes in-app paywall pricing tables, feature gating with entitlements, and subscription management views; determine entitlement mapping with the user before provisioning.
+description: Monetize apps on salable.app 2.0 using Salable MCP tools and REST API. Use when creating or modifying products, plans, line items, prices, currency options, tiers, and entitlements, including packaging decisions like flat-rate, per-seat, and metered pricing. When asked to monetize or monetise an app, assume scope includes in-app paywall pricing tables, feature gating with entitlements, and subscription management views; determine entitlement mapping with the user before provisioning.
 user-invocable: true
 allowed-tools: Read, Grep, Glob, WebFetch, mcp__salable__*
 ---
@@ -32,10 +32,10 @@ Do not proceed without a working MCP connection.
 The `openapi.yaml` is truncated in browsers/WebFetch but the full spec is available via curl. At session start, download it:
 
 ```bash
-curl -s https://beta.salable.app/openapi.yaml > /tmp/salable-openapi.yaml
+curl -s https://salable.app/openapi.yaml > /tmp/salable-openapi.yaml
 ```
 
-Always grep this file for exact request/response schemas before writing integration code — do not guess field names or casing. Use `beta.salable.app` contracts only, not `docs.salable.app`.
+Always grep this file for exact request/response schemas before writing integration code — do not guess field names or casing. Use `salable.app` contracts only, not `docs.salable.app`.
 
 ## Default Monetize Scope
 
@@ -79,7 +79,7 @@ Pro     | export, full_api, sso | flat_rate + seat   | $49 + $12/seat | $490 + $
 
 ## Workflow
 
-1. **Download OpenAPI spec** — `curl -s https://beta.salable.app/openapi.yaml > /tmp/salable-openapi.yaml`
+1. **Download OpenAPI spec** — `curl -s https://salable.app/openapi.yaml > /tmp/salable-openapi.yaml`
 2. **Auth preflight** — Confirm auth exists and identify non-email identity source. Exit if missing.
 3. **User discovery** — Walk through checklist. Present summary table for confirmation.
 4. **Build in dependency order** via MCP: entitlements -> product -> `plans_save` per plan -> verify with `plans_get`.
