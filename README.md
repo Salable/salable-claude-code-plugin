@@ -1,11 +1,11 @@
 # Salable Plugin for Claude Code
 
-Monetize any app with [Salable 2.0](https://beta.salable.app) directly from Claude Code. This plugin provides MCP tools for catalog provisioning and guided workflows for building pricing pages, entitlement gating, checkout flows, and subscription management into your app.
+Monetize any app with [Salable](https://salable.app) directly from Claude Code. This plugin provides MCP tools for catalog provisioning and guided workflows for building pricing pages, entitlement gating, checkout flows, and subscription management into your app.
 
 ## Prerequisites
 
 - [Claude Code](https://docs.anthropic.com/en/docs/claude-code) CLI installed
-- A [Salable](https://beta.salable.app) account with an API key
+- A [Salable](https://salable.app) account with an API key
 
 ## Setup
 
@@ -96,7 +96,7 @@ salable-claude-code-plugin/          # repo root
 The plugin connects Claude Code to the Salable platform through two channels:
 
 - **MCP tools** (`mcp__salable__*`) for catalog writes — creating products, entitlements, plans, line items, and prices
-- **REST API** (`beta.salable.app/api/*`) for app runtime — pricing pages, entitlement checks, checkout, and subscription management
+- **REST API** (`salable.app/api/*`) for app runtime — pricing pages, entitlement checks, checkout, and subscription management
 
 The `/salable-monetize` skill orchestrates both, using MCP for provisioning and REST for the code it generates in your app.
 
@@ -107,6 +107,6 @@ The `/salable-monetize` skill orchestrates both, using MCP for provisioning and 
 
 ## Links
 
-- [Salable 2.0 Dashboard](https://beta.salable.app)
-- [Salable Docs](https://beta.salable.app/docs)
-- [Salable OpenAPI Spec](https://beta.salable.app/openapi.yaml)
+- [Salable 2.0 Dashboard](https://salable.app)
+- [Salable Docs](https://salable.app/docs)
+- [Salable OpenAPI Spec](https://salable.app/openapi.yaml)
